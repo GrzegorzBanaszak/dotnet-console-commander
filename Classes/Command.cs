@@ -2,23 +2,26 @@
 
 namespace customConsole.Classes
 {
-    public delegate void Execute();
-    public class Command
+    public class Command : ICommand
     {
-        public string Name { get; set; }
-        private Execute Call { get; set; }
+        private string _name;
+        //Logika funkcji
+        private ICommandLogic _logic;
+        public string Name { get { return _name; } }
 
-        public Command(string name, Execute call)
+        public ICommandLogic Logic => _logic;
+
+        public Command(string name, ICommandLogic logic)
         {
-            Name = name;
-            Call = call;
+            _name = name;
+            _logic = logic;
         }
 
 
-
-        public void Execute()
+        //Wywołanie logiki
+        public void Execute(string[]? args = null)
         {
-            Call.Invoke();
+            _logic.Execute(args);
         }
     }
 }

@@ -1,3 +1,5 @@
+using customConsole.Commands;
+
 namespace customConsole.Classes
 {
     public class Commander
@@ -6,7 +8,7 @@ namespace customConsole.Classes
 
         public Commander()
         {
-            addCommand(new Command("help", () => Console.WriteLine("list of commands")));
+            addCommand(new Command("help", new HelpCommand()));
         }
 
         private void addCommand(Command command)
