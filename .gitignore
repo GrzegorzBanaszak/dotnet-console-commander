@@ -1,0 +1,139 @@
+# System specyficzny
+###########################
+# Maksyma nie dodawaj plików generowanych przez system, plików logów i tymczasowych.
+# Logs
+*.log
+*.tlog
+
+# Binaria systemu
+*.pdb
+*.exe
+*.dll
+*.class
+*.so
+*.dylib
+*.nupkg
+
+# System Specyficzny
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Pliki generowane przez Visual Studio
+###########################
+# Visual Studio
+.vscode/
+.vs/
+.idea/
+_ReSharper*/
+
+# Pliki binarne oraz obj, wstępnie kompilowane
+bin/
+obj/
+out/
+Debug/
+Release/
+AppPackages/
+BundleArtifacts/
+[Oo]ut/
+[Dd]ebug/
+[Rr]elease/
+
+# Pojedyncze pliki projektowe
+*.csproj.user
+*.csproj.*
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.DotSettings.*
+*.sln
+*.ncrunchsolution
+*.ncrunchproject
+.vsconfig
+
+# Pliki danych/konfiguracji lokalnej
+###########################
+# Dane lokalne
+appsettings.Development.json
+appsettings.Local.json
+
+# Katalogi NuGet
+###########################
+# NuGet
+*.nuget
+*.nupkg
+*.snupkg
+.nuget/
+.nuget/packages/
+NuGetScratch/
+
+# Konfiguracja Azure
+###########################
+# Azure
+azure-pipelines.yml
+project.lock.json
+project.fragment.lock.json
+
+# Konfiguracja Mac/Linux
+###########################
+# Mac/Linux Specyficzne
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+*.swo
+
+# Pliki testów
+###########################
+# Testy
+*.coverage
+*.coveragexml
+*.testresults
+TestResults/
+*.xmlcoverage
+*.sonarqube/
+.testreport
+
+# Pliki deploymentu
+###########################
+# Deploy
+.publish/
+publish/
+*.deploy.props
+*.deploy.targets
+
+# Pliki backup
+###########################
+# Backup
+*.bak
+*.swp
+*.bkp
+*.tmp
+*.old
+
+# Pliki CI/CD
+###########################
+# Ci/Cd Specyficzne
+/.idea
+/.build/
+.vspscc
+.vssscc
+
+# Dane użytkowników
+###########################
+# Użytkownicy
+!public/
+*.css.map
+*.js.map
+app.config
+appsettings.json
+
+# Konfiguracja systemowa
+###########################
+# Konfiguracje Specyficzne
+sitecore/
+sitecore.ps1
